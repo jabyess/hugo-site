@@ -1,0 +1,27 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <meta http-equiv="X-UA-Compatible" content="ie=edge">
+    <title>{{ .Title}} </title>
+    {{ $style := resources.Get "sass/main.scss" | toCSS }} 
+    <link rel="stylesheet" href="{{ $style.Permalink }}">
+</head>
+<body>
+  <nav class="nav">
+    <ul class="nav__list">
+      <li class="nav__list__item"><a href="">Home</a></li>
+      <li class="nav__list__item"><a href="">About</a></li>
+      <li class="nav__list__item"><a href="">Posts</a></li>
+      <li class="nav__list__item"><a href="">Contact</a></li>
+    </ul>
+  </nav>
+  {{ block "main" . }}
+
+  {{ end }}
+
+  {{ block "footer" . }}
+
+  {{ end }}
+</body>
