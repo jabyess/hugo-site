@@ -1,0 +1,26 @@
+@import 'variables.scss';
+
+body {
+  font-family: $montserrat;
+}
+
+.nav {
+  color: $purple;
+
+  &__list {
+    list-style: none;
+    margin-left: 0px;
+    display: flex;
+    justify-content: center;
+
+    &__item {
+      display: inline-block;
+      font-weight: 700;
+      margin: 10px 5px;
+
+      a {
+        text-decoration: none;
+      }
+    }
+  }
+}

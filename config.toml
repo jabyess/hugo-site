@@ -1,7 +1,0 @@
-baseURL = "https://jabyess.github.io/"
-languageCode = "en-us"
-defaultContentLanguage = "en"
-title = "skelios"
-
-[navbar.links]
-home = "/"
