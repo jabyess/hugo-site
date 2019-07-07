@@ -6,21 +6,53 @@ body {
 
 .nav {
   color: $purple;
+  font-size: $nav_size;
 
   &__list {
+    padding-left: 0px;
     list-style: none;
-    margin-left: 0px;
     display: flex;
-    justify-content: center;
-
+    justify-content: space-around;
+    
     &__item {
       display: inline-block;
       font-weight: 700;
       margin: 10px 5px;
+      border-bottom: 2px solid $purple;
 
       a {
         text-decoration: none;
       }
     }
+  }
+}
+.container {
+  margin: auto;
+  max-width: 900px;
+}
+
+.intro {
+}
+
+.contact {
+  list-style-type: none;
+  padding-left: 0;
+
+  &-item {
+    font-weight: 700;
+    cursor: pointer;
+    display: inline-block;
+    color: $purple;
+    border-bottom: 2px solid transparent;
+    &:hover {
+      border-bottom: 2px solid $purple;
+    }
+  }
+}
+
+.homepage {
+  text-align: center;
+  #target {
+    text-align: center;
   }
 }

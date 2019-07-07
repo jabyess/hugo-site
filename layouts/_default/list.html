@@ -1,3 +1,32 @@
 {{ define "main" }}
-  This is the list template
+  {{ if eq .Kind "home"}}
+    <div class="container homepage">
+      <div class="intro">
+        Welcome. This is the website of James Byess.
+      </div>
+
+      <ul class="contact">
+        <li class="contact-item" data-content="james.byess@gmail.com" >Email</li>
+        <li class="contact-item" data-content="@jabyess" >Twitter</li>
+        <li class="contact-item" data-content="https://github.com/jabyess" >Github</li>
+      </ul>
+
+      <div id="target">Click something</div>
+    </div>
+  {{ end }}
+  
+  {{ if eq .Kind "section" }}
+    section template
+    <div class="container">
+      <ul class="content-list">
+        {{ range .Pages }}
+          <li class="content-list__item">
+            <a href="{{ .Permalink }}">{{ .Title }} </a>
+          </li>
+        {{ end}}
+      </ul>
+    </div>
+  {{ end }}
+
+  
 {{ end }}
