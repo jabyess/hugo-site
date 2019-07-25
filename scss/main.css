@@ -1,0 +1,39 @@
+body {
+  font-family: "Montserrat", sans-serif; }
+
+.nav {
+  color: rebeccapurple;
+  font-size: 24px; }
+  .nav__list {
+    padding-left: 0px;
+    list-style: none;
+    display: flex;
+    justify-content: space-around; }
+    .nav__list__item {
+      display: inline-block;
+      font-weight: 700;
+      margin: 10px 5px;
+      border-bottom: 2px solid rebeccapurple; }
+      .nav__list__item a {
+        text-decoration: none; }
+
+.container {
+  margin: auto;
+  max-width: 900px; }
+
+.contact {
+  list-style-type: none;
+  padding-left: 0; }
+  .contact-item {
+    font-weight: 700;
+    cursor: pointer;
+    display: inline-block;
+    color: rebeccapurple;
+    border-bottom: 2px solid transparent; }
+    .contact-item:hover {
+      border-bottom: 2px solid rebeccapurple; }
+
+.homepage {
+  text-align: center; }
+  .homepage #target {
+    text-align: center; }
